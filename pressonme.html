@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Free?</title>
+    <style>
+        body {
+            background-color: #FFF1D0; /* Light Cream */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            border: 10px dashed #F556A1; /* Cute Pink Border */
+        }
+        .animated-text {
+            color: #D98CBC; /* Light Purple */
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .date-selector {
+            background-color: #A9AFD1; /* Soft Blue */
+            border: 2px solid #F556A1; /* Pink Border */
+            color: #FFF1D0; /* Light Cream Text */
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+	 .continue-button {
+            background-color: #D98CBC; /* Light Purple */
+            border: 2px solid #F556A1; /* Pink Border */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .continue-button:hover {
+            background-color: #F556A1; /* Pink */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="animated-text">Are you free on</h1>
+        <input type="date" class="date-selector">
+<a href="date.html" class="continue-button">CONTINUE (UwU)</a>
+
+
+    </div>
+</body>
+</html>
