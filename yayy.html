@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <style>
-        body {
-            background-color: #FFF1D0; /* Light Cream */
+       body {
+            background-color: #efebe0; /* White */
             font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
             padding: 50px;
@@ -16,17 +16,27 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
+        .celebration-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            animation: slideUp 10s forwards;
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
         h1 {
             color: #F556A1; /* Pink */
             font-size: 2.5em;
             margin-bottom: 20px;
         }
-        .celebration-gif {
-            width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-        }
+        
         .image {
             width: 300px;
             height: auto;
@@ -40,8 +50,9 @@
 </head>
 <body>
     <h1>Thank you for being my boyfriend</h1>
-    <img src="celebration.gif" alt="Celebration" class="celebration-gif"> <!-- Replace with your GIF path -->
-    <img src="your-image.jpg" alt="Image" class="image"> <!-- Replace with your image path -->
-    <p class="date-text">See you at the date!</p>
+    <img src="D:\MAHATI\COLLEGE\imgs\New folder\giphy.webp" alt="Celebration" class="celebration-gif"> <!-- Replace with your GIF path -->
+<img src="Sunflower Bouquet White Transparent, Beautiful Sunflower Bouquet, Bouquet Clipart, Flowers, Sunflower PNG Image For Free Download.jpg" alt="Flower" class="flower-image"> <!-- Replace with your image path -->
+<p class="date-text">See you at the date!</p>
+    
 </body>
 </html>
