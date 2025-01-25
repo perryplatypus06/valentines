@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Don't Love Me!?</title>
+    <style>
+        body {
+            background-color: #ffffff; /* White */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid #fb8da0; /* Outer Pink Border */
+        }
+        .inner-container {
+            border: 10px solid #ffffff; /* Inner White Border */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+        }
+        h1 {
+            color: #fb8da0; /* Pink */
+            font-size: 2em;
+            background-color: #ffffff; /* White */
+            padding: 10px 20px;
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .play-sound-button {
+            background-color: #fb8da0; /* Pink */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .play-sound-button:hover {
+            background-color: #fb6b90; /* Hot Pink */
+        }
+        .large-gif {
+            width: 500px; /* Adjust size as needed */
+            height: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner-container">
+        <h1>You don't love me!?</h1>
+        <button class="play-sound-button" onclick="document.getElementById('myAudio').play()">Play Sound</button>
+        <img src="banana-crying-cat.gif" alt="Large car" class="large-gif"> <!-- Replace with your GIF path -->
+    </div>
+    <audio id="myAudio">
+        <source src="cry-banana-cat.mp3" type="audio/mpeg"> <!-- Replace with your sound file path -->
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
+
