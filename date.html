@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Favorite</title>
+    <style>
+        body {
+            background-color: #FFF1D0; /* Light Cream */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid #F556A1; /* Outer Pink Border */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 60px;
+            margin-bottom: 20px;
+		margin-top: 100px;
+        }
+        .gallery-item {
+            background-color: #A9AFD1; /* Soft Blue */
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .gallery-item:hover {
+            background-color: #D98CBC; /* Light Purple */
+        }
+        .gallery-item img {
+            width: 250px;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .caption {
+            color: #FFF1D0; /* Pink */
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .caption input {
+            margin-right: 5px;
+        }
+        .continue-button {
+            background-color: #D98CBC; /* Light Purple */
+            border: 2px solid #F556A1; /* Pink Border */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .continue-button:hover {
+            background-color: #F556A1; /* Pink */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\@444udra on ig.jpg" alt="cat cafe date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image1">
+                <label for="image1">cat cafe date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\8f4459f7-d60e-4a4b-ac26-4e5719f0ebac.jpg" alt="picnic date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image2">
+                <label for="image2">picnic date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\c4b85349-78b2-4f17-996e-ea72f0c4abad.jpg" alt="shopping date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image3">
+                <label for="image3">shopping date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\cute arcade date.jpg" alt="arcade date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image4">
+                <label for="image4">arcade date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\edc7a488-c06c-4ac6-a7cc-ad438b40432c.jpg" alt="movie date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image5">
+                <label for="image5">movie date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\museum dates _3.jpg" alt="museum date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image6">
+                <label for="image6">museum date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\People-watching.jpg" alt="aquarium date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image7">
+                <label for="image7">aquarium date</label>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="D:\MAHATI\COLLEGE\imgs\New folder\photo booth poses.jpg" alt="photobooth date"> <!-- Replace with your image path -->
+            <div class="caption">
+                <input type="checkbox" id="image8">
+                <label for="image8">photobooth date</label>
+            </div>
+        </div>
+    </div>
+    <button class="continue-button">Continue</button>
+</body>
+</html>
